@@ -1,0 +1,10 @@
+{{ define "main" }}
+<main>
+  <article>
+    {{- if .Site.Params.headerImagePath }}
+    <p><figure><img alt="{{ .Site.Params.headerImageAlt }}" loading="lazy" decoding="async" src="{{ .Site.Params.headerImagePath }}" width="{{ .Site.Params.headerImageWidth }}" height="{{ .Site.Params.headerImageHeight }}"></figure></p>
+    {{- end }}
+    {{ .Content }}
+  </article>
+</main>
+{{ end }}

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ if eq .Title "404 Page not found" }}Page not found{{ else }}{{ .Title }}{{ end }}{{ if not (eq .Title .Site.Title) }} - {{ .Site.Title }}{{ end }}</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="/css/style.css" type="text/css" media="all">
+
+    {{- if .Site.Params.metaKeywords }}
+    <meta name="keywords" content="{{ .Site.Params.metaKeywords }}">
+    {{- end }}
+    {{- if .Site.Params.metaDescription }}
+    <meta name="description" content="{{ .Site.Params.metaDescription }}">
+    {{- end }}
+  </head>
+  <body>
+    {{- partial "header.html" . -}}
+
+    {{- block "main" . }}{{- end }}
+
+    {{- partial "footer.html" . -}}
+
+    <script data-no-cookie data-respect-dnt async src="https://cdn.splitbee.io/sb.js"></script>
+  </body>
+</html>

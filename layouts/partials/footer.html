@@ -1,0 +1,5 @@
+<footer>
+  {{- if .Site.Params.footerText }}
+  {{ .Site.Params.footerText | markdownify }}
+  {{- end }}
+</footer>

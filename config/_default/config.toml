@@ -1,0 +1,4 @@
+languageCode = "en"
+title = "Hack Your Bradfield Vote"
+disableKinds = ["RSS", "taxonomy"]
+ignoreErrors = ["error-disable-taxonomy"]
