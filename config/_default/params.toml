@@ -4,6 +4,7 @@ headerImagePath = "/img/lane-cove-river.jpg"
 headerImageAlt = "View of the Lane Cove River"
 headerImageWidth = "1632"
 headerImageHeight = "612"
+cloudflareWebAnalyticsToken = ""
 footerText = """Authorised by Jeremy Epstein, Gordon, NSW.
 
 Content and design copyleft 2022 [GreenAsh Services](https://greenash.net.au/).
